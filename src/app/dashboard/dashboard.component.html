@@ -1,0 +1,45 @@
+
+
+<div class="row">
+  <div class="main">
+    
+    <div>
+    <mat-card>Name :</mat-card>
+    <mat-card>Role :</mat-card>
+    <mat-card>Community :</mat-card>
+
+    </div> 
+    <div style="height:220px;width:420px;border:3px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+      <mat-card>ABC completed for AWS</mat-card>
+      <mat-card>ABC completed for Springboot</mat-card>
+      <mat-card>ABC completed for Angular</mat-card>
+      <mat-card>ABC completed for Python</mat-card>
+      <mat-card>ABC completed for Java</mat-card>
+      <mat-card>ABC completed for AWS</mat-card>
+      <mat-card>ABC completed for Springboot</mat-card>
+      <mat-card>ABC completed for Angular</mat-card>
+      <mat-card>ABC completed for Python</mat-card>
+      <mat-card>ABC completed for Java</mat-card>
+      </div>
+    <div>
+
+      
+
+    </div>
+
+
+  </div>
+  <div class="side">
+    <mat-card>Top 5 users</mat-card>
+    
+    <a *ngFor="let user of users" class="col-1-8"
+    routerLink="/detail/{{user.rank}}">
+  <div class="module user">
+    <h4>{{user.name}}</h4>
+  </div>
+
+  
+</a></div>
+</div>
+
+

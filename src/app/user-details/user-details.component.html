@@ -1,0 +1,46 @@
+
+<h2>Welcome to your Details</h2>
+<div>
+
+  
+<mat-card  *ngIf="user" class="card">
+
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>xxxxxxxx</mat-card-title>
+    <mat-card-subtitle>xxxxxxxx</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://logos-download.com/wp-content/uploads/2019/01/Cognizant_Technology_Solutions_Corp_Logo_old.png" alt="Cognizant Logo">
+  <h2>{{user.name | uppercase}} Profile Card</h2>
+  <p class="title">Programmer Analyst</p>
+  <p>MMFA Support</p>
+  <span>Number of completed courses:</span>{{user.numberofCompleted}}
+  
+  <p><button>Contact</button></p>
+</mat-card >
+
+
+</div>
+
+
+
+
+
+<!--
+<div *ngIf="user">
+
+    <h2>{{user.name | uppercase}} Profile</h2>
+    <div><span>Rank: </span>{{user.rank}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="user.name" placeholder="name"/>
+      </label>
+    </div>
+    <div ><span>number of completed courses:</span>{{user.numberofCompleted}}</div>
+
+    
+  
+  </div>
+  
+  <button (click)="goBack()">go back</button>
+--->

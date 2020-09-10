@@ -1,0 +1,27 @@
+<h1>{{title}}</h1>
+
+<mat-tab-group mat-align-tabs="start">
+    
+  <mat-tab aria-label="Example icon mat-tab with a home icon"routerLink="/dashboard">
+      <mat-icon>home</mat-icon>
+  </mat-tab>
+    
+    <mat-tab  label="Profile" routerLink="detail/:rank">Profile</mat-tab>
+    
+
+    
+    <mat-tab mat-mat-tab  label="Achievement" routerLink="achievements">Achievement</mat-tab>
+    <mat-tab mat-mat-tab  label="Engage" routerLink="engage">Engage & Fun</mat-tab>
+    <mat-tab mat-mat-tab  label="Message" routerLink="message">Manager Center</mat-tab>
+    <mat-tab mat-mat-tab  label="Blog " routerLink="blog">Blog</mat-tab>
+    <mat-tab mat-mat-tab  label="Users" routerLink="users">Users</mat-tab>
+    
+
+
+  </mat-tab-group>
+
+
+
+  <router-outlet></router-outlet>
+
+
